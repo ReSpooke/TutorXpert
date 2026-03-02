@@ -1,6 +1,6 @@
-# Advanced AI Interviewer for AI Engineer Roles
+# Basic AI Interviewer (AI Engineer)
 
-An enhanced command-line interviewer that evaluates AI Engineer responses across multiple rubric dimensions and estimates whether answers are more likely human-written or AI-generated.
+A lightweight command-line interviewer that asks common AI Engineer interview questions, scores answers with simple keyword coverage, and provides feedback.
 
 ## Run
 
@@ -8,20 +8,13 @@ An enhanced command-line interviewer that evaluates AI Engineer responses across
 python interviewer.py
 ```
 
-## Features
+## What it does
 
-- Multi-dimensional scoring per answer:
-  - Technical depth
-  - Production readiness
-  - Communication quality and trade-off language
-- Follow-up questions after each main prompt.
-- AI-vs-human answer-origin heuristics based on style signals.
-- Final report with rubric averages, origin trend summary, and recommendation.
+- Asks 5 foundational AI Engineer questions.
+- Scores each answer from 1 to 5.
+- Highlights matched concepts and gives improvement feedback.
+- Prints final average score and recommendation.
 
-## Important note on origin detection
+## Notes
 
-The AI-vs-human detector is heuristic and **not definitive**. It uses stylistic cues (phrasing patterns, lexical diversity, formatting, and personal-experience markers), so it should be treated as a signal rather than proof.
-
-## No external dependencies
-
-This tool uses Python standard library only.
+This is a basic simulator intended for practice. It uses deterministic keyword matching (no external API calls).
